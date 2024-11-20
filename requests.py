@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 
 def main():
-    MLB_produto = 'MLB2223878983'
+    MLB_produto = 'MLB{MLB}'
     URL = ('https://api.mercadolibre.com/items/' + MLB_produto)
-    html = 'https://produto.mercadolivre.com.br/MLB-2223878983-conversores-midia-gigabit-1000-mb-par-a-b-fibra-optica-_JM'
+    html = 'https://produto.mercadolivre.com.br/MLB-{MLB}'
 
     res = requests.get(html)
 
